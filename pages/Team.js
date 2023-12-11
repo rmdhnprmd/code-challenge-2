@@ -1,24 +1,36 @@
+import axiosGetUser from "@/utils/randomuser";
+import { data } from "autoprefixer";
 import Image from "next/image";
 import Link from "next/link";
 
-const Team = () => {
-  const teams = [
-    {
-      id: 1,
-      name: "Creating Streamlined Safeguarding Processes with OneRen",
-      image: "/teams-image/image-18.png",
-    },
-    {
-      id: 2,
-      name: "What are your safeguarding responsibilities and how can you manage them?",
-      image: "/teams-image/image-19.png",
-    },
-    {
-      id: 3,
-      name: "Revamping the Membership Model with Triathlon Australia",
-      image: "/teams-image/image-20.png",
-    },
-  ];
+const fetchUsers = async () => {
+  try {
+    const res = await axiosGetUser.get("/api", {
+      params: {
+        results: 3,
+      },
+    });
+    console.log("ini datanya", res.data.results);
+
+    const dataTeams = res.data.results.map((item) => {
+      return {
+        id: item.login.uuid,
+        firstName: item.name.first,
+        lastName: item.name.last,
+        picture: item.picture.large,
+      };
+    });
+
+    console.log("dari data", dataTeams);
+    return dataTeams;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const Team = async () => {
+  const teams = await fetchUsers();
 
   return (
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-16">
@@ -38,21 +50,22 @@ const Team = () => {
           return (
             <div key={team.id} className="mx-auto relative mb-12">
               <Image
-                className=" w-80"
-                src={team.image}
+                className=" w-[16rem] h-auto hover:scale-95 transition-all duration-300"
+                src={team.picture}
                 width={200}
                 height={200}
-                alt={`image ${team.name}`}
+                alt={`picture ${team.firstName}`}
               />
               <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12 ">
-                <h3>{team.name}</h3>
+                <h3 className="mb-3 text-neutralGrey font-semibold">
+                  {team.firstName} {team.lastName}
+                </h3>
                 <div className="flex items-center justify-center gap-8">
                   <Link
                     href="/"
-                    className="font-bold text-brandPrimary hover:text-neutral-700"
+                    className="font-bold text-brandPrimary transition-all duration-300 hover:text-neutral-700"
                   >
                     See more...
-                  
                   </Link>
                 </div>
               </div>

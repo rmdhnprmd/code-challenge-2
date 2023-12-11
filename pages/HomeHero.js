@@ -1,7 +1,7 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
-import banner1 from "../../public/Illustration.svg";
+import banner1 from "/public/Illustration.svg";
 import SlideComponent from "../components/heroComponents/Slide.module";
 
 const HomeHero = () => {
@@ -9,7 +9,6 @@ const HomeHero = () => {
     <div className="bg-neutralSilver">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
         <Carousel className="w-full mx-auto">
-          
           <SlideComponent
             className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12"
             heading="Lesson and insights"

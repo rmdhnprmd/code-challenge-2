@@ -18,7 +18,7 @@ const Products = () => {
               design principles that set us apart. 
             </p>
             <button className="btn-primary">
-              <Link href={""}>Learn more</Link>
+              <Link href={""}>See more...</Link>
             </button>
           </div>
 
