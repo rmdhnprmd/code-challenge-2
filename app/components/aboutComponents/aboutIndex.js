@@ -1,5 +1,4 @@
-import Image from "next/image";
-import icon1 from "@/public/about-icons/Icon-1.png";
+
 import { LiaHandshakeSolid, LiaUsersSolid, LiaBookOpenSolid, LiaCreditCard } from "react-icons/lia";
 
 const AboutIndex = () => {
