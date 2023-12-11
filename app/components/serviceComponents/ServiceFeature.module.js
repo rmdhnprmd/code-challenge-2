@@ -1,6 +1,6 @@
-import icon1 from "@/public/feature-icons/icon.svg";
-import icon2 from "@/public/feature-icons/icon-1.svg";
-import icon3 from "@/public/feature-icons/icon-2.svg";
+import icon1 from "/public/feature-icons/icon.svg";
+import icon2 from "/public/feature-icons/icon-1.svg";
+import icon3 from "/public/feature-icons/icon-2.svg";
 import Image from "next/image";
 
 const ServiceFeature = () => {
