@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ServiceFeature = () => {
   const services = [
     {
@@ -5,7 +7,7 @@ const ServiceFeature = () => {
       title: "Membership Organisations",
       description:
         "Our membership management software provides full automation of membership renewals and payments.",
-      image: "/feature-icons/icon.svg",
+      image: "/static/feature-icons/icon.svg",
       alt: "Image Membership Organisations",
     },
     {
@@ -13,7 +15,7 @@ const ServiceFeature = () => {
       title: "National Associations",
       description:
         "Elevate your national association with our powerful features streamlined communication to efficient event management.",
-      image: "/feature-icons/icon-1.svg",
+      image: "/static/feature-icons/icon-1.svg",
       alt: "Image National Associations",
     },
     {
@@ -21,7 +23,7 @@ const ServiceFeature = () => {
       title: "Clubs And Groups",
       description:
         "Transform the way you nurture clubs and groups within your community. Our software simplifies the complexities.",
-      image: "/feature-icons/icon-2.svg",
+      image: "/static/feature-icons/icon-2.svg",
       alt: "Image Clubs And Groups",
     },
   ];
@@ -44,7 +46,7 @@ const ServiceFeature = () => {
             >
               <div>
                 <div className="w-14 mx-auto">
-                  <img src={image} alt={alt} width={100} height={100} />
+                  <Image src={image} alt={alt} width={100} height={100} />
                 </div>
                 <h4 className=" text-2xl font-bold text-neutralDGrey mb-2 px-2">
                   {title}
