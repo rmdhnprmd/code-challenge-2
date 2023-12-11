@@ -11,7 +11,7 @@ const Testimonial = () => {
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16">
       <div className="md:flex md:flex-col lg:flex-row gap-10 items-center justify-center">
         <div>
-          <Image src={img} className="" width={380} height={380} />
+          <Image src={img} alt="image-testimoni" width={380} height={380} priority />
         </div>
 
         <div className="md:w-2/3 mx-auto">
@@ -34,10 +34,10 @@ const Testimonial = () => {
             </h5>
             <p className="text-base text-neutralGrey mb-6">British Dragon Boat Racing Association</p>
             <div className="flex items-center gap-8 flex-wrap">
-              <Image src={imgCompany1} width={70} />
-              <Image src={imgCompany2} width={70} />
-              <Image src={imgCompany3} width={70} />
-              <Image src={imgCompany4} width={70} />
+              <Image src={imgCompany1} alt="image-company" width={70} priority/>
+              <Image src={imgCompany2} alt="image-company" width={70} priority/>
+              <Image src={imgCompany3} alt="image-company" width={70} priority/>
+              <Image src={imgCompany4} alt="image-company" width={70} priority/>
               <div className="flex items-center gap-8">
                 <Link
                   href="/"
@@ -55,8 +55,8 @@ const Testimonial = () => {
                     <path
                       d="M4.02324 3.24222L5.12263 2.14283C5.25301 2.01245 5.25301 1.80106 5.12263 1.67068L4.02324 0.571289M5.02484 1.90676L0.350708 1.90676"
                       stroke="#4CAF4F"
-                      stroke-width="0.5008"
-                      stroke-linecap="round"
+                      strokeWidth="0.5008"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </Link>

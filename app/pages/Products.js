@@ -23,7 +23,7 @@ const Products = () => {
           </div>
 
           <div>
-            <Image src={Ilustrator} alt="about-overview-img" />
+            <Image src={Ilustrator} alt="about-overview-img" priority />
           </div>
         </div>
       </div>

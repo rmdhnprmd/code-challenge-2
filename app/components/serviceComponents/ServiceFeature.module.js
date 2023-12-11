@@ -11,6 +11,7 @@ const ServiceFeature = () => {
       description:
         "Our membership management software provides full automation of membership renewals and payments.",
       image: icon1,
+      alt: "Image Membership Organisations"
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const ServiceFeature = () => {
       description:
         "Elevate your national association with our powerful features streamlined communication to efficient event management.",
       image: icon2,
+      alt: "Image National Associations"
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ const ServiceFeature = () => {
       description:
         "Transform the way you nurture clubs and groups within your community. Our software simplifies the complexities.",
       image: icon3,
+      alt: "Image Clubs And Groups"
     },
   ];
 
@@ -38,7 +41,7 @@ const ServiceFeature = () => {
       </div>
       <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 gap-y-12 gap-x-12 xl:gap-x-28 mx-auto">
         {services.map((services) => {
-          const { id, title, description, image } = services;
+          const { id, title, description, image, alt } = services;
           return (
             <div
               key={id}
@@ -46,7 +49,7 @@ const ServiceFeature = () => {
             >
               <div>
                 <div className="w-14 mx-auto">
-                  <Image src={image} alt="feature-card-image" width={100} height={100} />
+                  <Image src={image} alt={alt} width={100} height={100} priority/>
                 </div>
                 <h4 className=" text-2xl font-bold text-neutralDGrey mb-2 px-2">
                   {title}
