@@ -9,7 +9,7 @@ const fetchUsers = async () => {
         results: 3,
       },
     });
-    console.log("ini datanya", res.data.results);
+    // console.log("ini datanya", res.data.results);
 
     const dataTeams = res.data.results.map((item) => {
       return {
@@ -20,7 +20,7 @@ const fetchUsers = async () => {
       };
     });
 
-    console.log("dari data", dataTeams);
+    // console.log("dari data", dataTeams);
     return dataTeams;
   } catch (error) {
     console.log(error);
@@ -29,7 +29,14 @@ const fetchUsers = async () => {
 };
 
 const Team = async () => {
-  const teams = await fetchUsers();
+  let teams = [];
+
+  try {
+    teams = await fetchUsers();
+  } catch (error) {
+    // Handle the error gracefully, e.g., display an error message
+    console.error("Error loading team members:", error);
+  }
 
   return (
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-16">
