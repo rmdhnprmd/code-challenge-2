@@ -20,7 +20,7 @@ const fetchUsers = async () => {
       };
     });
 
-    console.log("dari data", dataTeams);
+    // console.log("dari data", dataTeams);
     return dataTeams;
   } catch (error) {
     console.log(error);
