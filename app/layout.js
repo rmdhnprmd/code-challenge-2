@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NextCent",
-  description: "Manage your entire community in a single system",
+  description: "Manage your entire community in a single system"
 };
 
 export default function RootLayout({ children }) {

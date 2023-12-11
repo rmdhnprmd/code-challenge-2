@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const Team = ({ params }) => {
   console.log(params);
@@ -6,7 +6,6 @@ const Team = ({ params }) => {
     <div>
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-20">
         <div>
-          <Image  />
           <div className="md:w-3/5 auto">
             <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:4/5">
               Page Team - {params.slug}
