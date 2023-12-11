@@ -10,13 +10,6 @@ export const metadata = {
 const About = () => {
   return (
     <>
-      {/* Twitter card metadata */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Your Twitter Card Title" />
-      <meta name="twitter:description" content="Description for Twitter card" />
-      <meta name="twitter:image" content={aboutImg} />
-      {/* Add more Twitter card meta tags as needed */}
-
       <div>
         <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8">
           <div>
