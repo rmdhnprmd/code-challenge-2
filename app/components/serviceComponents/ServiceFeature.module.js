@@ -1,6 +1,3 @@
-import icon1 from "/public/feature-icons/icon.svg";
-import icon2 from "/public/feature-icons/icon-1.svg";
-import icon3 from "/public/feature-icons/icon-2.svg";
 import Image from "next/image";
 
 const ServiceFeature = () => {
@@ -10,7 +7,7 @@ const ServiceFeature = () => {
       title: "Membership Organisations",
       description:
         "Our membership management software provides full automation of membership renewals and payments.",
-      image: icon1,
+      image: "/feature-icons/icon.svg",
       alt: "Image Membership Organisations"
     },
     {
@@ -18,7 +15,7 @@ const ServiceFeature = () => {
       title: "National Associations",
       description:
         "Elevate your national association with our powerful features streamlined communication to efficient event management.",
-      image: icon2,
+      image: "/feature-icons/icon-1.svg",
       alt: "Image National Associations"
     },
     {
@@ -26,7 +23,7 @@ const ServiceFeature = () => {
       title: "Clubs And Groups",
       description:
         "Transform the way you nurture clubs and groups within your community. Our software simplifies the complexities.",
-      image: icon3,
+      image: "/feature-icons/icon-2.svg",
       alt: "Image Clubs And Groups"
     },
   ];
