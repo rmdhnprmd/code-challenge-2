@@ -1,4 +1,6 @@
+
 import About from "./pages/AboutOverview";
+import MyFooter from "./pages/Footer";
 import HomeHero from "./pages/HomeHero";
 import Navbar from "./pages/Navbar";
 import Products from "./pages/Products";
@@ -16,6 +18,7 @@ export default function Home() {
       <Products />
       <Testimonial />
       <Team />
+      <MyFooter />
     </main>
   );
 }
