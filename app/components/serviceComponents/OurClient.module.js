@@ -74,13 +74,13 @@ const OurClient = () => {
             <Image src={logo8} alt="client-logo" className="w-auto" />
           </div>
           <div className="py-8 px-8 rounded shadow mx-4 h-16 w-36 sm:px-10 sm:mx-8 sm:h-24 sm:w-52 flex justify-center items-center">
-            <Image src={logo9} alt="client-logo" className="w-12 sm:w-auto" />
+            <Image src={logo9} alt="client-logo" className="w-12 sm:w-20" />
           </div>
           <div className="py-8 px-8 rounded shadow mx-4 h-16 w-36 sm:px-10 sm:mx-8 sm:h-24 sm:w-52 flex justify-center items-center">
             <Image src={logo10} alt="client-logo" className="w-auto" />
           </div>
           <div className="py-8 px-8 rounded shadow mx-4 h-16 w-36 sm:px-10 sm:mx-8 sm:h-24 sm:w-52 flex justify-center items-center">
-            <Image src={logo11} alt="client-logo" className="w-12 sm:w-auto" />
+            <Image src={logo11} alt="client-logo" className="w-12 sm:w-20" />
           </div>
           <div className="py-8 px-8 rounded shadow mx-4 h-16 w-36 sm:px-10 sm:mx-8 sm:h-24 sm:w-52 flex justify-center items-center">
             <Image src={logo12} alt="client-logo" className="w-auto" />
@@ -88,11 +88,7 @@ const OurClient = () => {
           <div className="py-8 px-8 rounded shadow mx-4 h-16 w-36 sm:px-10 sm:mx-8 sm:h-24 sm:w-52 flex justify-center items-center">
             <Image src={logo13} alt="client-logo" className="w-auto" />
           </div>
-          {/* 
           
-          <div className="py-8 px-12 rounded shadow mx-8 h-24 w-52 flex justify-center items-center">
-            <Image src={logo13} alt="clilent-logo" />
-          </div> */}
         </Marquee>
       </div>
     </div>
