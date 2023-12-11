@@ -6,8 +6,14 @@ import SmoothScroll from "@/utils/smoothScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NextCent",
-  description: "Manage your entire community in a single system"
+  title: {
+    default: "Nextcent",
+    template: "%s | Nextcent"
+  },
+  description: "Manage your entire community in a single system",
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({ children }) {
