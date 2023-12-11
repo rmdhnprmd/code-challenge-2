@@ -58,7 +58,7 @@ const ServiceFeature = () => {
             </div>
           );
         })}
-        <Image src="/icon.svg" alt="test" width={100} height={100} />
+        <Image src="/about.svg" alt="test" width={100} height={100} />
       </div>
     </>
   );
