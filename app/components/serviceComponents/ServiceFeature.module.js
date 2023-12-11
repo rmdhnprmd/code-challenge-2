@@ -48,7 +48,7 @@ const ServiceFeature = () => {
             >
               <div>
                 <div className="w-14 mx-auto">
-                  <Image src={service.image} alt={alt} width={100} height={100} />
+                  <Image src={image} alt={alt} width={100} height={100} />
                 </div>
                 <h4 className=" text-2xl font-bold text-neutralDGrey mb-2 px-2">
                   {title}
@@ -58,6 +58,7 @@ const ServiceFeature = () => {
             </div>
           );
         })}
+        <Image src="/icon.svg" alt="test" width={100} height={100} />
       </div>
     </>
   );
