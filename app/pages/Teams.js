@@ -20,7 +20,7 @@ const fetchUsers = async () => {
       };
     });
 
-    // console.log("dari data", dataTeams);
+    console.log("dari data", dataTeams);
     return dataTeams;
   } catch (error) {
     console.log(error);
@@ -28,7 +28,7 @@ const fetchUsers = async () => {
   }
 };
 
-const Team = async () => {
+const Teams = async () => {
   let teams = [];
 
   try {
@@ -68,7 +68,8 @@ const Team = async () => {
                 </h3>
                 <div className="flex items-center justify-center gap-8">
                   <Link
-                    href="/"
+                    href={`/team/${team.firstName + "-" + team.lastName}`}
+                    key={team.id}
                     className="font-bold text-brandPrimary transition-all duration-300 hover:text-neutral-700"
                   >
                     See more...
@@ -83,4 +84,4 @@ const Team = async () => {
   );
 };
 
-export default Team;
+export default Teams;

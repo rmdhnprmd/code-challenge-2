@@ -5,7 +5,7 @@ import HomeHero from "./pages/HomeHero";
 import Navbar from "./pages/Navbar";
 import Products from "./pages/Products";
 import Service from "./pages/Service";
-import Team from "./pages/Team";
+import Teams from "./pages/Teams";
 import Testimonial from "./pages/Testimonial";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <About />
       <Products />
       <Testimonial />
-      <Team />
+      <Teams />
       <MyFooter />
     </main>
   );
