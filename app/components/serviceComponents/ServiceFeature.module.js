@@ -37,8 +37,8 @@ const ServiceFeature = () => {
         <p className="text-neutralGrey">Who is Nextcent suitable for?</p>
       </div>
       <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 gap-y-12 gap-x-12 xl:gap-x-28 mx-auto">
-        {services.map((services) => {
-          const { id, title, description, image, alt } = services;
+        {services.map((service) => {
+          const { id, title, description, image, alt } = service;
           return (
             <div
               key={id}
