@@ -1,6 +1,12 @@
 import aboutImg from "@/public/about.svg";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Nextcent | About Us",
+  description:
+    "Welcome to Nextcent, where passion meets purpose. Founded 2022, we've embarked on a remarkable journey, shaping our vision into a dynamic reality",
+};
+
 const About = () => {
   return (
     <div>

@@ -13,7 +13,6 @@ import {
   BsInstagram,
   BsTwitter,
 } from "react-icons/bs";
-import logo from "@/public/logo.svg";
 
 const MyFooter = () => {
   return (

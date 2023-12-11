@@ -1,28 +1,27 @@
-import { Link } from "react-scroll";
+
 import logo from "@/public/logo.svg";
 import Image from "next/image";
+import Link from "next/link";
 import { FaXmark, FaBars } from "react-icons/fa6";
 
 const NavbarLarge = ({ props: {navItems, toggleMenu, isMenuOpen} }) => {
   return (
     <div className="flex justify-between items-center text-base gap-8">
-      <a href="/" className="text-2xl font-semibold flex items-center space-x-3">
+      <Link href="/" className="text-2xl font-semibold flex items-center space-x-3">
         <Image
           src={logo}
           alt="logo"
           className="max-w-10 inline-block items-center"
         />
         <span className="text-[#263238]">NEXCENT</span>
-      </a>
+      </Link>
 
       {/* nav items for large device */}
       <ul className="md:flex space-x-12 hidden">
         {navItems.map(({ link, path }) => (
           <Link
-            to={path}
-            spy={true}
-            smooth={true}
-            offset={-100}
+            href={path}
+        
             key={path}
             className="block text-base text-gray900 hover:text-brandPrimary first:font-medium"
           >

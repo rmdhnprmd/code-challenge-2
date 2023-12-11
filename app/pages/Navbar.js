@@ -22,9 +22,9 @@ const Navbar = () => {
 
   // navitems array
   const navItems = [
-    { link: "Home", path: "home" },
+    { link: "Home", path: "/" },
     { link: "Service", path: "service" },
-    { link: "About", path: "about" },
+    { link: "About", path: "about-us" },
     { link: "Product", path: "product" },
     { link: "Testimonial", path: "testimonial" },
     { link: "FAQ", path: "faq" },
