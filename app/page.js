@@ -5,6 +5,7 @@ import Navbar from "./pages/Navbar";
 import Products from "./pages/Products";
 // import { useEffect, useState } from "react";
 import Service from "./pages/Service";
+import Team from "./pages/Team";
 import Testimonial from "./pages/Testimonial";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
       <About />
       <Products />
       <Testimonial />
+      <Team />
     </main>
   );
 }
