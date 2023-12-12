@@ -1,5 +1,7 @@
-import aboutImg from "@/public/about.svg";
 import Image from "next/image";
+import AboutHero from "../components/aboutComponents/aboutHero";
+import AboutMission from "../components/aboutComponents/aboutMission";
+import AboutIndex from "../components/aboutComponents/aboutIndex";
 
 export const metadata = {
   title: "About Us",
@@ -9,31 +11,58 @@ export const metadata = {
 
 const About = () => {
   return (
-    <>
-      <div>
-        <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8">
-          <div>
-            <div>
-              <Image src={aboutImg} alt="about image" />
-            </div>
-            <div className="md:w-3/5 auto">
-              <h2 className="text-4xl text-neutralDGrey font-semibold mb-4 md:4/5">
-                The unseen of spending three years at Pixelgrade
-              </h2>
-              <p className="md:w-3/4 text-sm text-neutralGrey mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
-                Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
-                tristique iaculis. Nullam pulvinar sit amet risus pretium
-                auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus
-                sem. Donec elementum pulvinar odio.
+    <div>
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-28">
+        <AboutHero />
+        <AboutMission />
+        <AboutIndex />
+        
+        <div className="my-36">
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-4 max-w-md">
+              <h2 className="text-3xl font-bold text-neutralDGrey">Our Mission</h2>
+              <p className=" text-neutralGrey">
+                Building an enterprise level site doesn't need nightmare or cost
+                your thousands. Felix is purpose built for ease of use and
+                completxability to create.
               </p>
-              <button className="btn-primary">Learn more</button>
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/about/Tick.png"
+                    width={22}
+                    height={2}
+                    alt="check icon"
+                  />
+                  <p>Posting to social media, blogs, and messengers</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/about/Tick.png"
+                    width={22}
+                    height={2}
+                    alt="check icon"
+                  />
+                  <p>Working with images and videos</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/about/Tick.png"
+                    width={22}
+                    height={2}
+                    alt="check icon"
+                  />
+                  <p>The Future of Writing Blog Articles</p>
+                </div>
+              </div>
             </div>
+
+            <Image src="/about/Image-3.png" width={300} height={200} alt="image-1 mission"/>
+            <Image src="/about/Image-4.png" width={300} height={200} alt="image-2 mission"/>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
