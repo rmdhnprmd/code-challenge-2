@@ -25,6 +25,9 @@ module.exports = {
       },
       screens: {
         'xs': '320px'
+      },
+      backgroundImage: {
+        'our-team': "url('/about/Background.png')"
       }
     },
     

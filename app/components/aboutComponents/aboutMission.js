@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutMission = () => {
   return (
     <div
-      className="flex flex-col items-center xl:flex-row xl:items-center xl:h-[100vh] gap-10 w-4/5 mx-auto px-12 my-28"
+      className="flex flex-col items-center xl:flex-row xl:items-center xl:h-[60vh] gap-10 w-4/5 mx-auto px-12 my-28"
     >
       <div className="max-w-lg">
         <div>
